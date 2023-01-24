@@ -378,6 +378,10 @@ button:hover {
   .art-container {
     width: 30rem;
   }
+
+  .project-image-container {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -387,6 +391,10 @@ button:hover {
 
   .art-container {
     width: 40rem;
+  }
+
+  .project-image-container {
+    width: 100%;
   }
 }
 
@@ -464,7 +472,7 @@ button:hover {
 
 .art-container img {
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* about page style */
@@ -586,6 +594,18 @@ button:hover {
 .project-summary > div {
   max-width: 18rem;
 }
+
+.project-image-container {
+  flex: 1 0 auto;
+  max-width: 56rem;
+}
+
+.project-image-container > img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+
 
 /* animations */
 /* ----------------------------------------------
