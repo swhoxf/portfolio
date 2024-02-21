@@ -1,40 +1,40 @@
+const primaryNav = document.querySelector('.primary-navigation')
+const navToggle = document.querySelector('.nav-toggle')
 
-function init() {
-  // delete planes when more than 3 appear on the screen
-  function deletePlanes() {
-    const container = document.getElementById('svg-container')
-    const planes = document.getElementsByClassName('plane')
-    if (planes.length > 3) {
-      console.log('going in')
-      for (let i = 0; i < planes.length; i++) {
-        container.removeChild(container.children[0])
-      }
-    }
+navToggle.addEventListener('click', () => {
+  const visibility = primaryNav.getAttribute('data-visible')
+  if (visibility === 'false') {
+    primaryNav.setAttribute('data-visible', true)
+    navToggle.setAttribute('aria-expanded', true)
+  } else if (visibility === 'true') {
+    primaryNav.setAttribute('data-visible', false)
+    navToggle.setAttribute('aria-expanded', false)
   }
+})
 
-  // add new plane at mouse click location
-  function addPlane(event) {
-    // variable for svg that contains all other svgs
-    const container = document.getElementById('svg-container')
-    // create plane at mouseclick location
-    const x = event.x
-    const y = event.y
-    const newPlane = document.createElement('img')
-    newPlane.setAttribute('src', 'images/paper-plane-svgrepo-com.svg')
-    newPlane.setAttribute('position', 'absolute')
+let resizeTimer
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper")
+  clearTimeout(resizeTimer)
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper")
+  }, 400)
+})
 
-    newPlane.style.position = 'absolute'
-    newPlane.style.top = y.toString() + 'px'
-    newPlane.style.left = x.toString() + 'px'
-    newPlane.style.width = '2rem'
-    newPlane.style.height = '2rem'
-    newPlane.style.zIndex = '5'
+// // Remove the transition class
+// const square = document.querySelector('.square');
+// square.classList.remove('square-transition');
 
-    newPlane.classList.add('plane')
-    container.appendChild(newPlane)
-    deletePlanes()
-  }
+// // Create the observer, same as before:
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       square.classList.add('square-transition');
+//       return;
+//     }
 
-  // document.addEventListener('click', addPlane)
-  
-}
+//     square.classList.remove('square-transition');
+//   });
+// });
+
+// observer.observe(document.querySelector('.square-wrapper'));

@@ -3,130 +3,134 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Soph Ho - UI/UX Designer | Front-End Developer</title>
+    <title>Soph Ho - UI/UX Designer | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="https://www.dropbox.com/scl/fi/rzojynqsuru2jlw5bikwn/24_064.ico?rlkey=2wdbm8jp5hzt16pq4ijm5dlv7&raw=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
-    <link
-      rel="preload"
-      href="https://source.unsplash.com/random/500x500"
-      as="image"
-      media="(max-width: 600px)" />
     <script src="script.js" async defer></script>
 
   </head>
   <body>
     <div id="hero">
-      <div class="cloud-container" aria-hidden="true">
-        <img class='cloud big wave-1 top' src="images/cloud1.svg" />
-        <img class='cloud med wave-1 center' src="images/cloud2.svg" />
-        <img class='cloud small wave-1 bottom slow' src="images/cloud3.svg" />
-        <img class='cloud small wave-1 b-bottom fast' src="images/cloud3.svg" />
 
-        <img class='cloud med wave-2 bottom' src="images/cloud2.svg" />
-
-        <img class='cloud med wave-3 center' src="images/cloud1.svg" />
-        <img class='cloud small wave-3 center fast' src="images/cloud2.svg" />
-        <img class='cloud big wave-3 center' src="images/cloud2.svg" />
-        <img class='cloud med wave-3 b-bottom' src="images/cloud2.svg" />
-
-        <img class='cloud small wave-4 bottom' src="images/cloud3.svg" />
-        <img class='cloud big wave-4 center fast' src="images/cloud1.svg" />
-        <img class='cloud med wave-4 bottom' src="images/cloud2.svg" />
-
-        <img class='cloud small wave-5 center' src="images/cloud2.svg" />
-        <img class='cloud med wave-5 bottom slow' src="images/cloud3.svg" />
-
-        <img class='cloud med wave-6 center' src="images/cloud2.svg" />
-        <img class='cloud small wave-6 bottom' src="images/cloud3.svg" />
-        <img class='cloud small wave-6 b-bottom slow' src="images/cloud3.svg" />
-
-        <img class='cloud med wave-7 bottom' src="images/cloud2.svg" />
-      </div>
-      
-
-      <nav class="nav-bar home-page">
-        <a href="index.html" aria-label="home">
-          <img class="icon" src="images/cat-satisfied-svgrepo-com.svg"/>
+      <nav class="nav-bar">
+        <a class="icon" href="index.html" aria-label="home">
+          <img loading="lazy" src="https://www.dropbox.com/scl/fi/sg99tulb1ai70t51s0n0p/large-logo.png?rlkey=ev0w8pi3jz6jrqf0fvmoc1xca&raw=1"/>
         </a>
-        <div>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-        </div>
+        <ul class="primary-navigation" data-visible="false">
+          <li>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown-hover-item">Projects</div>
+              <div class="nav-dropdown-content">
+                <a href="projects/praxis-impact.html">Praxis Impact</a>
+                <a href="projects/workplace-wellness.html">Workplace Wellness</a>
+                <a href="projects/tv-paint-animation.html">TV Paint Animation</a>
+                <a href="projects/podsie.html">Podsie</a>
+                <a href="projects/ez-pharm.html">EZ Pharm</a>
+                <a href="projects/skate-log.html">Skate Log</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-roledescription="menu" aria-expanded="false">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </nav>
-      
-      <div class="container">
-        <div class="introduction slide-in-blurred-top">
-          <h1>Hi, I'm Soph,<br/>UI/UX Designer & Front-End Developer</h1>
-          <p>My passion for art, love for languages, and boundless curiosity fuel my every design.</p>
+
+      <div class="hero-image container">
+        <picture>
+          <source media="(max-width: 800px)" srcset="https://www.dropbox.com/scl/fi/ksu58ddve71jgmw5vxa6q/boba.png?rlkey=41om3l2offh2xij4hxvczahd4&raw=1">
+          <img src="https://www.dropbox.com/scl/fi/9qls2ddd2beuwhqu9qh7j/portfolio-hero.png?rlkey=veubk4pwiv30dkte6cn3j1xgr&raw=1">
+        </picture>
+      </div>
+
+
+
+      <div class="introduction container">
+        <div class="introduction">
+          <h1>Hi, I'm <span class="intro-hover">Soph</span></h1>
+          <h2>UI/UX Designer & Web Developer</h2>
+          <p>Dolore officia velit sit mollit esse cupidatat. Dolore officia velit sit mollit esse cupidatat.</p>
         </div>
       </div>
      
     </div>
 
-    <div class="content">
-      <div class="project-section">
-        <div class="project-card tilt-in-top-1">
-          <div class="content">
-            <div class="description">
-              <h2>Project Name</h2>
-              <p>Dolore officia velit sit mollit esse cupidatat.</p>
-              <a href="projects/project-template.html">View Project</a>
-            </div>
-            <div>
-              <div class="image-container">
-                <img src="https://source.unsplash.com/random/500x300">
-              </div>
-            </div>
-          </div> 
-        </div>
+    <div class="project-section">
 
-        <div class="project-card tilt-in-top-1">
-          <div class="content">
-            <div class="description">
-              <h2>Project Name</h2>
-              <p>Dolore officia velit sit mollit esse cupidatat.</p>
-              <a href="projects/project-template.html">View Project</a>
-            </div>
-            <div>
-              <div class="image-container">
-                <img src="https://source.unsplash.com/random/500x300">
-              </div>
-            </div>
-          </div> 
+      <div class="project-card">
+        <div class="image-container">
+          <a href="projects/praxis-impact.html"><img loading="lazy" src="https://www.dropbox.com/scl/fi/2mq8h7f17gqn44dqhnq3v/praxis-impact-hero.png?rlkey=v6y8o6np1k6mnun983zw3yqr5&raw=1"></a>
         </div>
-
-        <div class="project-card tilt-in-top-1">
-          <div class="content">
-            <div class="description">
-              <h2>Project Name</h2>
-              <p>Dolore officia velit sit mollit esse cupidatat.</p>
-              <a href="projects/project-template.html">View Project</a>
-            </div>
-            <div>
-              <div class="image-container">
-                <img src="https://source.unsplash.com/random/500x300">
-              </div>
-            </div>
-          </div> 
+        <div class="description">
+          <h3>Praxis Impact</h3>
+          <p>Building a client relationship model platform to serve experiential learning programs</p>
+          <a href="projects/praxis-impact.html">View project</a>
         </div>
-        
-      </div>  
-    </div>
-
-    <footer>
-      <a href="#">
-        <img class="icon" src="images/cat-satisfied-svgrepo-com.svg"/>
-      </a>
-      <div>
-        <a href="#">
-          <img src="images/linkedin-outline-svgrepo-com.svg"/>
-        </a>
-        <a href="#">
-          <img src="images/email-9-svgrepo-com.svg"/>
-        </a>   
       </div>
-    </footer>
+
+      <div class="project-card">
+        <div class="image-container">
+          <a href="projects/workplace-wellness.html"><img loading="lazy" src="https://www.dropbox.com/scl/fi/uvwk8xqlamjll9wxfpbia/workplace-wellness-hero.png?rlkey=kmpglkaf4l9pn6x53o9ubthkv&raw=1"></a>
+        </div>
+        <div class="description">
+          <h3>Workplace Wellness</h3>
+          <p>Leveraging social aspects of workplace culture to encourage physical activity in workers</p>
+          <a href="projects/workplace-wellness.html">View project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="image-container">
+          <a href="projects/tv-paint-animation.html"><img loading="lazy" src="https://www.dropbox.com/scl/fi/uzl0hwadj00qvbudq0h2n/tv-paint-animation-hero.png?rlkey=79694h82ajlplx3w8hnhtp3nq&raw=1"></a>
+        </div>
+        <div class="description">
+          <h3>TV Paint Animation</h3>
+          <p>Visual redesign of existing site, branding, and logo design</p>
+          <a href="projects/tv-paint-animation.html">View project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="image-container">
+          <a href="projects/podsie.html"><img loading="lazy" src="https://www.dropbox.com/scl/fi/akw9h8km2tjaau856x6dx/podsie-hero.png?rlkey=0wd3svchy3hl20b26qt78bo9m&raw=1"></a>
+        </div>
+        <div class="description">
+          <h3>Podsie</h3>
+          <p>Student-side dashboard for visualizing learning progress</p>
+          <a href="projects/podsie.html">View project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="image-container">
+          <a href="projects/ez-pharm.html"><img loading="lazy" src="https://www.dropbox.com/scl/fi/z826kqbx8rcue8tf8vcxy/ez-pharm-hero.png?rlkey=87twbarnakbx3huipngckrz6s&raw=1"></a>
+        </div>
+        <div class="description">
+          <h3>EZ Pharm</h3>
+          <p>Simplifying the process of ordering recurring medications</p>
+          <a href="projects/ez-pharm.html">View project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="image-container">
+          <a href="projects/skate-log.html"><img loading="lazy" src="https://www.dropbox.com/scl/fi/9rn0sjqaq3vtfp66mixeg/skate-log-hero.png?rlkey=cnpypwwy5z11pqcav5br4veke&raw=1"></a>
+        </div>
+        <div class="description">
+          <h3>Skate Log</h3>
+          <p>Learning how to skateboard and tracking personal progress</p>
+          <a href="projects/skate-log.html">View project</a>
+        </div>
+      </div>
+      
+    </div>  
     
   </body>
 </html>

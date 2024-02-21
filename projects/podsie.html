@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Soph Ho - UI/UX Designer | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="https://www.dropbox.com/scl/fi/rzojynqsuru2jlw5bikwn/24_064.ico?rlkey=2wdbm8jp5hzt16pq4ijm5dlv7&raw=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <script src="../script.js" async defer></script>
+
+    <nav class="nav-bar">
+      <a class="icon" href="../index.html" aria-label="home">
+        <img loading="lazy" src="https://www.dropbox.com/scl/fi/sg99tulb1ai70t51s0n0p/large-logo.png?rlkey=ev0w8pi3jz6jrqf0fvmoc1xca&raw=1"/>
+      </a>
+      <ul class="primary-navigation" data-visible="false">
+        <li>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-hover-item">Projects</div>
+            <div class="nav-dropdown-content">
+              <a href="../projects/praxis-impact.html">Praxis Impact</a>
+              <a href="../projects/workplace-wellness.html">Workplace Wellness</a>
+              <a href="../projects/tv-paint-animation.html">TV Paint Animation</a>
+              <a href="../projects/podsie.html">Podsie</a>
+              <a href="../projects/ez-pharm.html">EZ Pharm</a>
+              <a href="../projects/skate-log.html">Skate Log</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="../about.html">About</a>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-roledescription="menu" aria-expanded="false">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </nav>
+
+    <div class="content">
+      <h1>Podsie</h1>
+      <h3>Student-side dashboard for visualizing learning progress</h3>
+    </div>
+
+    <img loading="lazy" class="project-hero" src="https://www.dropbox.com/scl/fi/akw9h8km2tjaau856x6dx/podsie-hero.png?rlkey=0wd3svchy3hl20b26qt78bo9m&raw=1">
+
+
+    <div class="content">
+      <div class="project-summary">
+        <div>
+          <h5>Overview</h5>
+          <p>
+            For this project, I worked to design the student-side dashboard to help students improve their motivation to use the platform to better reap the benefits of Podsie's spaced retrieval algorithm. I worked on a team of four as part of my undergraduate human-computer interaction capstone project, where I served as project manager and user experience designer. Our team delivered a  Figma prototype of the design for desktop and mobile and implemented a working prototype of the progress indicator interaction using Docker.
+          </p>
+        </div>
+        
+        <div>
+          <div>
+            <h5>Role</h5>
+            <p><span class="bold">Project Manager, User Experience Designer</span><br> User Research • Visual Design • Prototyping</p>
+          </div>
+          <div>
+            <h5>Tools</h5>
+            <p>Figma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Background</h2>
+          <p>Knowledge retention is important for academic success, and long-term retention is paramount for long-term academic success. To support this endeavor, Podsie provides an online learning tool for middle to high school students utilizing the spaced retrieval methodology. Students are repeatedly assigned information to recall over an extended period of time at shifting intervals until the student proves mastery of the material. This method helps students retain information for a much longer period of time, instead of typical study methods designed for cramming before tests.<br>
+
+            On Podsie, teachers create assignments on Podsie for students to complete and review in the future. Students also have a personal deck that is a culmination of questions from assignments created by the teacher. If a student gets a question right, the question is assigned a lower priority when students review their personal deck. If the student gets it wrong, the question will be assigned as higher priority and will be asked sooner. This method is called spaced retrieval, which helps students retain the material they learn over a long period of time. <br>
+            
+            Podsie would like to improve the students' experience by finding ways to improve student motivation. More specifically, Podsie is looking for ways to motivate students intrinsically instead of extrinsically. This will allow students to be more inclined to continue using Podsie for an extended period of time, and develop a growth mindset towards material that they are learning.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Client and Stakeholders</h2>
+          <p>
+            For this project, the team worked with Joshua Ling, who is the cofounder and CEO of Podsie. Josh works closely with teachers all across the world, ranging from New Zealand to California, on a beta-version of Podsie. Any new features introduced to the platform will first be rolled out to the beta-version, where teachers in that program will give feedback and report bugs. Once the feature has been fully tested and used by teachers in the beta-version, the feature will be integrated into the official Podsie system that is used by all Podsie teachers. <br>
+
+            These teachers assign Podsie activities to students as either an in-class activity or after-class assignment. Students complete the assignment questions. Answered questions will then be placed into their personal deck for them to review. Teachers are able to monitor student performance from the existing teacher-side dashboard interface.
+          </p>
+        </div>
+        
+        <div class="project-image-container">
+          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/dle4lw9jy0p7wbbge6swm/stakeholder-map.png?rlkey=qf8uoh1ae2zdsuhmv4dlodvoa&raw=1">
+        </div>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Initial Research</h2>
+          <p>
+            Before we started our design phase, we conducted initial research. We began with secondary research, conducting a literature review and competitive analysis to gain domain knowledge around student motivation, gamification, and ed-tech. For our literature review, we read about motivation and gamification in ed-tech, learning about different frameworks of understanding motivation in students including self-determination theory and the multi-dimensional motivation and engagement framework. We used this knowledge to frame the insights we wanted to draw from our primary research. In our competitive analysis, we noted that competing ed-tech platforms, like Anki, Carousel, Duolingo, Kahoot, Learn Coach, and Quizlet, all lack one of the four main features that Podsie has: free cost of use, spaced retrieval algorithm, detailed feedback, and class monitoring.<br>
+            
+            After our secondary research, we conducted our primary research on Podsie teachers and Podsie students. With our Podsie teacher participants, we used a combination of structured interviews and directed storytelling, and with our Podsie students, we used a combination of structured interviews and surveys. 
+
+          </p>
+        </div>
+        
+        <div class="project-image-container">
+          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/s24km675csujr7wjs4pwf/affinity-diagram.png?rlkey=x7ferrqaq5pvr93u1bxsqsq14&raw=1">
+        </div>
+      </div>
+
+      <div class="project-process podsie bg">
+        <div class="content">
+          <h4>Key Insights</h4>
+          <p>
+            From our research and synthesis, we gathered three major insights about the existing platform.
+          </p>
+          <ul>
+            <li><span class="bold">Consistency in small digestible chunks is key to optimizing Podsie's effect.</span> Habit building is key to consistency. Students who are not already highly motivated did not have much reason to come back to Podsie and review their personal deck. This deterred them from reviewing their personal deck on a daily basis and building that habit.</li>
+            <li><span class="bold">Students awareness of Podsie's capabilities could help them continue using Podsie. </span>While Podsie has a progress page to indicate student improvement through spaced retrieval, students had a difficult time making that connection and struggled to gauge their progress throughout their time in the class. </li>
+            <li><span class="bold">Students want a centralized and accessible hub for their learning materials. </span>Currently Podsie has three different tabs on the progress page that segregate the visualizations students have for their current status and how they have progressed over their time using Podsie. Hence this may deter students from closely following the progress page, and from realizing their improvements with using the spaced retrieval methodology.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <p class="podsie problem-statement">What design solutions can be introduced to improve student motivation? Can we do so while establishing a stronger connection to the Podsie Brand?
+        </p>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Ideation</h2>
+          <p>
+            Our team started our ideation phase by brainstorming and sketching ideas individually in order to diverge as much as possible. When we met as a team, we merged similar ideas and created storyboards of each distinct direction. We conducted speed dating using our storyboards with high school students to see what they thought would help them most in studying. The result of these speed dating sessions was the notion of growing a digital plant with some form of progress indicator. This idea presented more design opportunities for less self-directed learners. We believed this idea would help those that struggle with finding motivation by promoting their habit-building. At this stage, we were not exactly sure what the plant would represent or how to incorporate it into the existing platform, so we went back to the drawing boards for another parallel brainstorming session. Our rough sketches would be used to help guide our low-fidelity wireframes. 
+          </p>
+        </div>
+        
+        <div class="project-image-container">
+          <img loading="lazy" class="x-small" src="https://www.dropbox.com/scl/fi/5holijktu6rbid8kem6xe/ideation.png?rlkey=ynuioiro76revi7f76f0bw48q&raw=1">
+        </div>
+      </div>
+
+      <div class="project-process podsie bg">
+        <div class="content">
+          <p>Indication of progress through the growth of a digital plant</p>
+        </div>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Low-Fidelity Prototyping</h2>
+          <p>
+            With our refined idea in mind, our team started brainstorming what this could look like in the Podsie platform. The general idea was that students could grow a different plant for each assignment they complete and plant it in the class garden. The plant would be incorporated into the entire experience of Podsie.<br>
+            
+            Upon logging into the platform, students would be immediately reminded to complete an assignment and grow a plant. When they had completed the assignment (and consequently finished growing that specific plant), they would plant it in the class garden for everyone to see and collect. 
+          </p>
+        </div>
+        
+        <div class="project-image-container">
+          <div class="grid col-3">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/pzw9koh1679aul7mcrcja/lo-fi-class-garden.png?rlkey=s416pz81kb9gb6j18codyw0th&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/348picq37q6c907iuhsie/lo-fi-deck-review-session.png?rlkey=b0t0slaafcqfq0fthpmpacfhx&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/ouo3fjsbe9jls1vz6nb4b/lo-fi-progress.png?rlkey=9yi62fzuz1okitm169ygqewlt&raw=1">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Mid-Fidelity Prototyping</h2>
+          <p>
+            In our mid-fidelity unit, we created three mid-fidelity prototypes, conducting user testing after each iteration to validate our assumptions about our design before making changes. We kept our insights gleaned from our user testing on our low-fidelity prototype -- that progress should be tied to the personal deck instead of assignments, that the  data visualizations for progress on the current Podsie UI are confusing for students, and that students feel isolated in the current Podsie platform -- in mind as we designed our prototypes. Thus, we ended up focusing on developing the personal plant, class garden, and progress dashboards to give students a clearer view of their personal progress with the aim of increasing their intrinsic motivation and encouraging healthy competition through the plant progress indicators to increase their extrinsic motivation.<br>
+            
+            Our biggest changes in this unit were our decisions to consolidate the plant progress indicators for each assignment into a singular personal plant displaying personal deck progress and restructuring the progress page to include a progress dashboard with different data visualizations.<br>
+            
+            Our user testing and critique sessions throughout this unit helped us realize that our initial dashboard design, while including useful information, showed too much information at once. As a result, in later iterations, we made sure to lower the cognitive load on the user through more use of progressive disclosure.
+          </p>
+        </div>
+        
+        <div class="project-image-container">
+          <div class="grid col-3">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/26mqpsbdumhzmmnmtw6nr/mid-fi-assignments.png?rlkey=9vpwsoa4ji3jyeu2gjsfufkvm&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/qmxwp0j8bvg51499nq5qb/mid-fi-progress.png?rlkey=b2yv63s4jztl88ipvplgyf87z&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/ngenc6npo3zmxfnjvn5qf/mid-fi-personal-deck.png?rlkey=r94m15n9ygi94wqxladpvf05a&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/1759mkkuvm5wy4zpypszg/mid-fi-overall.png?rlkey=jq31xiewaceacvtvxdh3fiec5&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/earhb4k5gr8vry4md8ipc/mid-fi-class-garden.png?rlkey=a29fzax6gcbgas1l4gocr1u5u&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/y6zatfap5ren0rgtmrc2w/mid-fi-deck-review-session.png?rlkey=qn6blod0d3cuxne8uht9cmsl9&raw=1">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>User Testing</h2>
+          <p>We tested three iterations of our mid-fidelity design using structured interviews and contextual interview with two non-Podsie high school students and one Podsie teacher. </p>
+          <h4>Questions</h4>
+          <ul>
+            <li>Do students understand the plants, progress bar, and graph?</li>
+            <li>Do students like the class garden?</li>
+            <li>Do students like the interaction between EXP and plant growth?</li>
+            <li>Are students able to see when the progress bar is increasing?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-process podsie bg">
+        <div class="content">
+          <h4>User Testing Insights</h4>
+          <ul>
+            <li>The class garden promotes healthy competition.</li>
+            <li>Rewarding experience points for answering questions regardless of correctness increases student motivation.</li>
+            <li>Students have a hard time understanding the existing progress page.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="project-process">
+        <div class="content">
+          <h2>Solution</h2>
+          <p>
+            In the high-fidelity phase, we split up into two teams: one to tackle the code and the other to finish iterating on the Figma design. We decided to code and implement the plant itself because that is the most specialized component of our solution. Our team coded the plant to grow and level up as students completed personal deck assignments. However, given the time constraints, we implemented a simplified version of the plant where we did not include sub-levels. It has the basic functionality of what we envision the plant to have. <br>
+
+            The biggest change we made to our Figma design is to the dashboard. We organized some of the information in different ways, altered the color scheme, and changed the presentation of the plant. The rest of it was just fine-tuning everything and making sure the entire flow was consistent. We also made more specific decisions regarding the experience points (xp) and what the threshold would be to “level-up”. <br>
+
+            Lastly, our client wanted screens for mobile as well so he know how the content would change responsively. 
+          </p>
+        </div>
+        
+        <div class="project-image-container">
+          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/qn8kzqrof9p49dfywvfjs/user-flow.png?rlkey=hadqrb0d2i6nmmsocezyqmhzz&raw=1"/>
+        </div>
+
+        <div class="content">
+          <h4>Podsie Plant</h4>
+          <p>
+            The Podsie plant is the primary aspect of the solution. Here, Podsie students are given a virtual plant for them to grow over the course of their time in the class, which serves as a clear indicator of student progress as it grows.<br>
+            
+            Students are able to grow their plant by earning experience points (xp). Experience points are earned through completing assignments as well as reviewing the personal deck, which touches upon aspects of gamification. <br>
+
+            While students are able to earn points through these two methods, they will gain a larger amount of xp for every question reviewed in the personal deck. Doing so builds upon the cornerstone of our design solution, which focuses on the habit building of students reviewing their personal deck on a daily basis. This habit will then allow students to reap the benefits of spaced retrieval, which Podsie utilizes for the personal deck. <br>
+
+            Another main feature of the Podsie plant is that students gain xp to advance to the next sublevel. After students achieve x number of sublevels, they will advance to the next level and grow their plant into the next stage (for example growing seedling to sapling after achieving the 5 necessary sublevels, or sapling to young tree after 10 sublevels). The purpose of the sublevels is so that students can see their progress more clearly as they advance onto higher levels that require a larger amount of xp. 
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <img loading="lazy" class="x-small" src="https://www.dropbox.com/scl/fi/zy7hca1ab67tzt59i3ufl/solution-plant.png?rlkey=352tai7zapg44ztygf25c6hne&raw=1"/>
+        </div>
+
+        <div class="content">
+          <h4>Personal Progress Dashboard</h4>
+          <p>
+            The second feature of our solution is the personal progress dashboard. This dashboard serves as a central hub for students to get an overview of their current progress and how they have improved over the course of time. They are able to see their current progress through visualizations such as: their Podsie plant, and personal deck analytics. To view a more cumulative summary of their progress, they can refer to the overall activity section. 
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/g581wjunc05pop59jkc03/solution-desktop-progress.png?rlkey=o28kv4zog46zgyd4uqpwlgaqb&raw=1"/>
+        </div>
+
+        <div class="content">
+          <h4>Classroom Garden</h4>
+          <p>
+            The final feature of our solution is the classroom garden. This is a communal space where students can view their peers' Podsie activity via the plants in the garden. The class garden helps students stay connected with their peers through the Podsie platform. <br>
+            
+            This level of abstraction helps students gauge how others are doing on a higher level, without revealing specific information about where each student stands in the class. Hence this is intended to encourage a healthy amount of competition where students are motivated to keep up with their peers. 
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/bmikg9b8j8n5tlis8fk8k/solution-desktop-class-garden.png?rlkey=oiwly8y5dzf9u9pf0sxlyiic6&raw=1"/>
+        </div>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>User Testing</h2>
+          <p>We tested three iterations of our mid-fidelity design using structured interviews and contextual interview with two non-Podsie high school students, two Podsie high school students, and one Podsie teacher. </p>
+          <h4>Questions</h4>
+          <ul>
+            <li>Does the flow make sense?</li>
+            <li>Do students understand the plant sublevel vs. plant stages?</li>
+            <li>Will this solution motivate students to use Podsie more consistently? </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-process podsie bg">
+        <div class="content">
+          <h4>User Testing Insights</h4>
+          <ul>
+            <li>Students want to see more specific information in the dashboard about how they can improve.</li>
+            <li>Students think the plant makes Podsie more fun and enjoyable.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Next Steps</h2>
+          <ul>
+            <li>
+              <span class="bold">Teacher interface. </span>For the duration of the project, we focused primarily on the student experience, but there is much design opportunity on the teacher-side interface. In one of our earlier interviews, a teacher mentioned the fact that he loves the new features our client was introducing, but emphasized the difficulty of its access due to the interface, so it would be important to refine this teacher experience. 
+            </li>
+            <li>
+              <span class="bold">Evaluation and expansion. </span>Finally, we also want to get information about the usage of our student interface a couple months down the line to quantifiably verify the effectiveness of our design in improving student motivation and help expand the Podsie product into more schools. 
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-process">
+        <div class="content">
+          <h2>Results and Takeaways</h2>
+          <p>
+            Through our user insights, we discovered that students vary a lot in terms of motivation. Some students are incredibly self-motivated to study and use Podsie, whereas others lack the drive to engage with the platform or class. We realize through our many rounds of research and iteration that our solution would need to engage students both mentally and viscerally in order to reach students of all levels of motivation. What followed was a combination of extrinsic and intrinsic mechanisms. Gamification (extrinsic) allows for students to stay engaged with the material and motivates them to come back to Podsie. Showing students their progress (intrinsic) allows for them to create and maintain a long-term goal—a quality critical to the nurturing of student motivation.<br>
+            
+            Spaced retrieval is effective, but it is difficult for students to stay motived to engage with its monotonous nature. The benefits of spaced retrieval thus can only be realized with time, which is difficult for students if they have already lost interest in the material or method. By scaffolding students' understanding of their progress with a more visually robust and exciting design solution, our solution helps students stay motivated and build their Podsie habit. While we would have loved to gauge the efficacy of our solution in a larger classroom setting, it is more fair that we base the quantification of our success on the progress we have made in terms of satisfying client needs, as well as the student feedback we have received. The team has done well in that regard. 
+          </p>
+        </div>
+        
+        <div class="project-image-container bg podsie">
+          <div class="grid col-3">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/04jz58bhene37eiuynra1/final-desktop-progress.png?rlkey=338ryg4kpjw0ry2jc3g2rzslo&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/fzodtp179u8ohg0su163k/final-desktop-personal-deck.png?rlkey=2kgmgxfqt0tlwl8giv39l9n1n&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/57co0nwcwt3i9syd31v6i/final-desktop-graph.png?rlkey=zecsnin22s41krtr3ut1o07bt&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/16dj9y6q6hjwly5d86l7s/final-desktop-chart.png?rlkey=p77qlytp9orgblab7xzbj3jqq&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/26bn2wa2edlfypdvhj04y/final-desktop-deck-session.png?rlkey=c4gtov41yg4hob8kjopgwt2kx&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/ubckp60gbrc5fo87x9cf4/final-desktop-class-garden.png?rlkey=pwyoee29xvzaohl3s42lltz49&raw=1"/>
+          </div>
+          <div class="grid col-3 mobile">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/0ac4blqoo02pzyp10bhx5/final-mobile-progress.png?rlkey=k6qb8hc6imlte0ug2k3xgod45&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/byuc2s7cxt1oovafchtoj/final-mobile-assignments.png?rlkey=ag5o8kjryj1t331d3lf4mmmdy&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/q3smiey8p03o09w0s2e7a/final-mobile-chart.png?rlkey=0mrkdc4yh92l7t8xqiead6p09&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/ucli77xzpiyg8jhnsifd6/final-mobile-personal-deck.png?rlkey=k1fjydbgqs02wk7d6op6jx0jg&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/062lg76af5lhstlh2osv6/final-mobile-deck-session.png?rlkey=rvzzhp36fvq4sjdpf5qh45gto&raw=1"/>
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/0tou0u3o395yo6x9nazmh/final-mobile-class-garden.png?rlkey=bvfo2uju7ljdfxuqhf6ymckls&raw=1"/>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
