@@ -1226,30 +1226,3 @@ img.large {
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
-
-/* Frame 5 */
-
-position: absolute;
-width: 688px;
-height: 446px;
-left: 704px;
-top: 400px;
-
-background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 35.42%, rgba(255, 255, 255, 0) 100%);
-border-radius: 16px;
-
-
-/* Rectangle 6 */
-.rect-6 {
-  box-sizing: border-box;
-
-position: absolute;
-width: 143px;
-height: 57px;
-left: 98px;
-top: 319px;
-
-border: 1px solid #000000;
-border-radius: 32px;
-
-}
