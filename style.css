@@ -72,11 +72,12 @@ h2 {
 h1 {
   font-size: 4rem;
   font-weight: 900;
+  margin-bottom: 1rem;
 }
 
 p, a {
   font-size: 1.15rem;
-  line-height: 150%;
+  line-height: 200%;
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
