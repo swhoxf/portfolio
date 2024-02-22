@@ -28,10 +28,6 @@
   color: var(--primary-color)
 }
 
-br {
-  margin-bottom: 1rem;
-}
-
 body {
   padding: 0rem;
   margin: 0rem;
