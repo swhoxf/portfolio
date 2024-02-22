@@ -74,8 +74,8 @@ h1 {
 p, a {
   font-size: 1.15rem;
   line-height: 200%;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 li {
@@ -432,6 +432,9 @@ button {
 }
 
 /* about page style */
+.content.wide-content {
+  max-width: 76rem;
+}
 .profile {
   display: flex;
   flex-wrap: wrap;
@@ -445,11 +448,9 @@ button {
 }
 
 .profile img {
-  min-width: 20rem;
-  min-height: 20rem;
-  object-fit: cover;
+  max-width: 30rem;
+  object-fit: contain;
   flex: 1 1 10rem;
-  border-radius: 50%;
 }
 
 .technical {
