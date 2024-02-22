@@ -438,7 +438,6 @@ button {
 .profile {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
   gap: 2rem;
 }
 
@@ -761,6 +760,9 @@ img.large {
     flex-direction: column;
   }
 
+  .technical {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
@@ -802,9 +804,6 @@ img.large {
     grid-template-columns: auto;
   }
 
-  .technical {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   
 }
@@ -823,6 +822,10 @@ img.large {
     padding-bottom: 0;
     padding-left: 2rem;
   }
+
+  .technical {
+    grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 465px) {
@@ -833,10 +836,6 @@ img.large {
   .profile img {
     width: 100%;
     min-width: 0rem;
-  }
-
-  .technical {
-    grid-template-columns: auto;
   }
 
   .skills-grid {
