@@ -68,7 +68,7 @@ h2 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 h1 {
@@ -539,8 +539,7 @@ button {
 
 .content {
   max-width: 56rem;
-  margin: auto;
-  padding: 0rem 2rem;
+  margin: 0rem auto 2rem;
   position: relative;
 }
 
