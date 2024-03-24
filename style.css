@@ -588,6 +588,14 @@ button {
   margin: auto;
 }
 
+figcaption {
+  margin: auto;
+}
+
+figcaption a {
+  font-size: 1rem;
+}
+
 .project-process div :has(h4) {
   padding-top: 1rem;
 }
