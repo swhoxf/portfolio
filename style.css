@@ -33,7 +33,6 @@ body {
   margin: 0rem;
   background-color: var(--white);
   position: relative;
-  padding-bottom: 4rem;
   /* overflow-x: hidden; */
 }
 
@@ -92,8 +91,8 @@ li {
 .nav-bar, footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
-  width: 100%;
 }
 
 .nav-bar {
@@ -173,8 +172,9 @@ li {
   color: black;
   transition: all ease-out 250ms;
   font-size: 1rem;
-  line-height: 150%;
+  line-height: 1rem;
   margin-top: 0rem;
+  margin-bottom: 0rem;
   text-transform: uppercase;
   align-items: center;
   position: relative;
@@ -247,13 +247,15 @@ li {
   width: 2rem;
 }
 
-footer img {
-  max-width: 2rem;
-  max-height: 2rem;
+footer {
+  padding: 0 2rem;
+  margin: 2rem 0rem;
 }
 
 footer a {
   text-decoration: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 button {
@@ -313,7 +315,6 @@ button {
 
 .introduction.container {
   position: absolute;
-  /* top: 45%; */
   bottom: 10%;
   left: 60%;
   padding: 0rem 2rem;
@@ -328,8 +329,6 @@ button {
 
 .introduction > * {
   margin-bottom: 0rem;
-  /* background: white; */
-  /* text-shadow: 4px 4px rgba(255, 255, 255, 1); */
 }
 
 .introduction h1 {
@@ -636,7 +635,6 @@ img.large {
 
 .grid {
   display: grid;
-  /* padding: 2rem; */
 }
 
 .grid.mobile {
@@ -798,7 +796,6 @@ img.large {
   .introduction.container {
     justify-content: flex-start;
     padding-left: 1rem;
-    /* bottom: 20%; */
   }
 
   .project-card {
@@ -949,6 +946,12 @@ img.large {
 
   .primary-navigation[data-visible="true"] .nav-dropdown-content a {
     padding: 0rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
