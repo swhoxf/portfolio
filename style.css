@@ -99,6 +99,8 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem;
+  z-index: 100;
+  width: 100%;
 }
 
 .nav-toggle {
@@ -247,7 +249,7 @@ li {
 }
 
 footer {
-  padding: 0 2rem;
+  padding: 4rem 2rem 0rem;
   margin: 2rem 0rem;
 }
 
@@ -278,6 +280,9 @@ button {
 }
 
 /* home page style */
+#hero .nav-bar {
+  position: absolute;
+}
 
 .introduction h2 {
   margin-top: 0rem;
@@ -306,10 +311,6 @@ button {
   100% {
     background-position: 100% 50%;
   }
-}
-
-#hero .nav-bar {
-  position: absolute;
 }
 
 .introduction.container {
