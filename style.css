@@ -601,6 +601,10 @@ figcaption a {
   padding-top: 1rem;
 }
 
+.project-process.bg {
+  padding: 4rem 0rem;
+}
+
 img.x-small {
   max-width: min(100%, 20rem);
 }
