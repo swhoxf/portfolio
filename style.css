@@ -825,7 +825,10 @@ img.large {
     grid-template-columns: auto;
   }
 
-
+  .testing-results.grid.col-3 {
+    display: flex !important; 
+    flex-direction: column;
+  }
   
 }
 
