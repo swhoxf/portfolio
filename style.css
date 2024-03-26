@@ -913,6 +913,10 @@ img.large {
     text-align: center;
   }
 
+  .nav-dropdown a{
+    margin-bottom: 1rem;
+  }
+
   .primary-navigation[data-visible="true"] .nav-dropdown-content {
     display: flex;
     flex-direction: column;
