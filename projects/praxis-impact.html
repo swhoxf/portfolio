@@ -43,7 +43,7 @@
 
     <div class="content">
       <h1>Praxis Impact</h1>
-      <h3>Building a client relationship model platform to serve experiential learning programs</h3>
+      <h3>Designing the onboarding process of a client relationship management (CRM) platform serving experiential learning programs</h3>
     </div>
 
     <img loading="lazy" class="project-hero" src="https://www.dropbox.com/scl/fi/2mq8h7f17gqn44dqhnq3v/praxis-impact-hero.png?rlkey=v6y8o6np1k6mnun983zw3yqr5&raw=1">
@@ -54,11 +54,10 @@
         <div>
           <h5>Overview</h5>
           <p>
-            Our Capstone team is working with Praxis Impact, a technology consulting company, to develop an experiential learning (e.g., client-based projects, case study simulations, internships, and service-based learning) platform for educational institutions, job training programs, and enterprise-class business environments. Our team is building upon the previous capstone team's prototype and research to create a CRM platform. The goal is to make it easier for university organizations to manage student experiential learning projects, while considering scalability and customizability.
+            Our Capstone team worked with Praxis Impact, a technology consulting company, to develop an experiential learning (e.g., client-based projects, case study simulations, internships, and service-based learning) platform for educational institutions, job training programs, and enterprise-class business environments. Our team built upon the previous capstone team's prototype and research to design and prototype the onboarding process for the client relationship management (CRM) platform. The goal of the platform is to make it easier for university organizations to manage student experiential learning projects by developing features to facilitate scalability and customizability.
           </p>
-            
           <p>
-            This project is part of my graduate human-computer interaction capstone course. I served as sprint master for the first sprint and lead visual designer on the second sprint.
+            This project was part of a year-long graduate human-computer interaction capstone course split into five sprints. I served as sprint master for the first sprint and visual designer and UX researcher in following sprints.
           </p>
         </div>
         
@@ -85,35 +84,6 @@
         </div>
       </div>
 
-      <div class="project-process">
-        <div class="content">
-          <h2>Competitive Analysis</h2>
-          <p>
-            Since our team had little experience working with CRM software or managing experiential learning programs, we began by conducting a competitive analysis and user research to develop models that would accurately describe the problem space to not only help our own understanding but also highlight key insights that our client had not yet considered.
-          </p>
-        </div>
-        
-        <div class="project-image-container">
-          <div class="grid col-2">
-            <img loading="lazy" src="https://www.dropbox.com/scl/fi/qlbrxddji7is8cfmnq9d8/active-campaign.png?rlkey=0xlokkqe14p2gqlx4msbfvy69&raw=1">
-            <img loading="lazy" src="https://www.dropbox.com/scl/fi/pz9e8ucwgab3r88z20vlu/salesforce.png?rlkey=fbqxootw8cirr6y9lmikdjxzh&raw=1">
-          </div>
-        </div>
-      </div>
-
-      <div class="project-process">
-        <div class="content">
-          <h2>Initial User Interviews</h2>
-          <p>
-            After conducting our competitive analysis, our team conducted user testing with three members of the University of Marylan's iConsultancy using semi-structured interview to better understand how managers of experiential learning platforms manage client relationships, focusing on their workflow and tools. After our interviews, we used affinity mapping to synthesize our thoughts and generate insights. 
-          </p>
-        </div>
-        
-        <div class="project-image-container">
-          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/4sib4b11k79lu3avi4j66/affinity-diagram.png?rlkey=vruo5ed9tt0c3xaitbntihgv3&raw=1">
-        </div>
-      </div>
-
       <div class="content">
         <p class="praxis problem-statement">How might we help individuals managing experiential learning programs more easily manage their client relationships and projects at scale?
         </p>
@@ -121,25 +91,87 @@
 
       <div class="project-process">
         <div class="content">
-          <h2>Ideation</h2>
+          <h2>Problem Analysis</h2>
+          
+          <h4>Understanding Managers of Experiential Learning Programs</h4>
           <p>
-            Our team used the insights we generated during our affinity diagramming to generate sketches. We determined that we would focus on developing an onboarding wizard for users setting up the workflow for their experiential learning platform because the interface for day-to-day client management would depend on the inputs put in at startup.
+            From our interviews with 9 participants involved in various aspects of experiential learning programs at University of Maryland, we found some of their key characteristics and pain points.
+          </p>
+          <ul>
+            <li>Some of them were not familiar with business management, which made it difficult for them to find and manage clients for student projects.</li>
+            <li>All felt that many of the features of existing CRM systems were superfluous for their own usage and made it harder to learn the system.</li>
+            <li>All felt that existing CRM systems did not accurately capture all the data they needed to fully visualize and manage their process.</li>
+          </ul>
+          <p>
+            We used our results to create 2 representative personas for the 2 kinds of target users we uncovered: Evelyn, the director managing a team that facilitates experiential learning programs, and Beth, the one-person-team in charge of every step of the process of facilitating an experiential learning program.
           </p>
         </div>
         
         <div class="project-image-container">
-          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/njg8axnyhfflwfhl82tct/ideation.png?rlkey=wuaglul46nrat3e0gze23wsl2&raw=1">
+          <div class="grid col-2">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/epwpek6imrilz2lqiunh6/persona-1.png?rlkey=lvdzdcp5lk3x0k4lqwk37y2kv&raw=1">
+            <img loading="lazy" src="https://www.dropbox.com/scl/fi/6g1ux88aoosutarg5g01n/persona-2.png?rlkey=td2kzidhny4a6fs65u51rlz5n&raw=1">
+          </div>
         </div>
+
+        <div class="content">
+          <h4>Issues With Process Management</h4>
+          <p>
+            Through our user interviews and competitive analysis, we found that there were 2 major obstacles for users dealing with process management: users are <span class="bold">unaccustomed to formalizing</span> a workflow process and existing systems have <span class="bold">nomenclature that is misaligned</span> with users' mental models for their workflow.
+          </p>
+          <p>
+            When users are unaccustomed to formalizing a workflow process, they do not visualize process management or engage in systems thinking. This makes it difficult to keep the program running if the director leaves their position. One person has to serve as a keystone for their whole operation and be involved in every part of the process, which makes it difficult for the program to scale. In addition, there may not be locks in place to prevent people in the program from engaging in risky behavior that may endanger the reputation or output of the program. 
+          </p>
+          <p>
+            When the nomenclature of a platform is misaligned with a user's mental model of their workflow, it creates friction between the user and the system. It is offensive to some users to see their partners labeled as clients or customers when they engage in community-based projects. It is also potentially confusing or annoying for other users who have to remember two different terms: one for what the system uses and another for what they normally use to communicate with their team. Misalignment in terminology creates frustration and mistrust in users; it makes them avoid features that would otherwise help them because their understanding of how the feature works is misaligned from how the feature actually works.
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <div class="grid col-2">
+            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/nfdb5t73od6k6qu2u4c9d/iconsultancy-workflow.png?rlkey=vzsddhnmu2k2e2wxidt9j6l5q&raw=1">
+            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/4et4q7twun56id2cmbhea/quest-workflow.png?rlkey=h7q1oubrg6gkefglmeistfbmi&raw=1">
+          </div>
+        </div>
+
+        <div class="content">
+          <h4>Obstacles to Scalability</h4>
+          <p>
+            Our user interview data and competitive analysis also led us to find the major obstacle to scalability with existing CRM systems: existing CRM platforms are not <span class="bold">newcomer-friendly</span>. Newer experiential learning programs stick to using Google Suite or something they are more familiar with, but app-hopping (moving between Google Suite, emails, Slack, and other platforms) makes it difficult to manage files and communicate efficiently, especially when onboarding new members to the team. Salesforce and Active Campaign offer too much functionality to the point where it is overwhelming for new users to get started. 
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <!--add image of continuum here-->
+          <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+        </div>
+
       </div>
 
       <div class="project-process">
         <div class="content">
-          <h2>Low-Fidelity Wireframing</h2>
+          <h2>Design Process</h2>
+          <h4>Ideation</h4>
+          <p>
+            After an initial set of semi-structured interviews with individuals managing experiential learning programs, our team synthesized our findings into an affinity diagram. From here, we had determined that there were two main views that we could develop: the setup or the day-to-day. Our team decided to focus on the setup as to develop the framework for the rest of the platform. We used the insights we generated during our affinity diagramming to generate sketches. We determined that we would focus on developing an onboarding wizard for users setting up the workflow for their experiential learning platform because the interface for day-to-day client management would depend on the inputs put in at startup.
+          </p>
+          
+        </div>
+        
+        <div class="project-image-container">
+          <div class="grid col-2">
+            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/4sib4b11k79lu3avi4j66/affinity-diagram.png?rlkey=vruo5ed9tt0c3xaitbntihgv3&raw=1">
+            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/njg8axnyhfflwfhl82tct/ideation.png?rlkey=wuaglul46nrat3e0gze23wsl2&raw=1">
+          </div>
+        </div>
+
+        <div class="content">
+          <h4>Initial Wireframe</h4>
           <p>
             From our sketches, our team generated a mid-fidelity prototype of the onboarding wizard. The wizard consisted of several steps: initial questions, nomenclature personalization, workflow builder, and data management system setup. We thought to use the user's answers to the initial questions to generate a custom framework of nomenclature and workflow. This design focused on allowing the user flexibility to edit the terminology in each aspect of the system. Our thinking was that this would align with the user need of dissatisfaction with the flexibility of existing systems. At this stage, we largely thought about each part of the onboarding process as individual elements in the design, which presented issues during our user testing. 
           </p>
         </div>
-        
+
         <div class="project-image-container">
           <div class="grid col-3">
             <img loading="lazy" src="https://www.dropbox.com/scl/fi/7ijxtpga4tjwfve54vy0f/sprint-1-onboarding-questions.png?rlkey=b00arxalpl7qs0gdy6l4lu6iu&raw=1">
@@ -151,46 +183,126 @@
           </div>
         </div>
 
+
+        <div class="content">
+          <!--codesign session with client-->
+          <h4>Initial Co-Design Session With Client</h4>
+          <p>
+            Seeing the flaws in our initial wireframe uncovered through our user testing sessions, we decided to conduct a co-design session with our client to better understand the client’s vision for the platform. From this co-design session, we settled on the idea of a “choose your own adventure,” where the user would have the freedom to choose which aspect of the dashboard they would like to set up first. It also led to our first batch of A/B testing with our ideas for a top-down or bottom-up approach to creating a workflow.
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <!--add images of co-design session here-->
+          <div class="grid col-4">
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+          </div>
+        </div>
+
+        <div class="content">
+          <!--a/b testing-->
+          <h4>A/B Testing with Workflow Builder and Gating System</h4>
+          <p>
+            As we iterated on our design, we went through a couple rounds of A/B testing. We first tested whether users would be more comfortable with what we were calling a top-down or bottom-up approach to setting up their workflow. For a top-down approach, the user would first define the high-level “buckets,” or stages, of their workflow process and then fill them in with the individual tasks for each stage. For a bottom-up approach, the user would first define the individual tasks of their workflow process and then group them together into stages. After testing 2 users, we found that both preferred the bottom-up approach, so our team focused on developing this process.
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <!--add images of a/b testing here-->
+          <div class="grid col-2">
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+          </div>
+        </div>
+
+        <div class="content">
+          <p>
+            When we started defining the gating system for our design, we conducted card-sorting sessions with some participants to determine how users would prefer to set gates for their tasks -- if they would prefer to set one type of gate first before setting the second type of gate, or if they would prefer to set both types of gates at the same time. After testing 3 participants, we found that all of them preferred to have the option to set both types of gates at the same time.
+          </p>
+        </div>
+
+        <div class="project-image-container">
+          <!--add image of card sorting here-->
+          <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+        </div>
       </div>
 
       <div class="project-process">
         <div class="content">
-          <h2>User Testing and Further User Research</h2>
+          <h2>Solution</h2>
+          
+          <!--introducing princples of project management-->
+          <h4>Introducing Principles of Process Management</h4>
           <p>
-            After testing our prototype with more individuals involved with experiential learning programs at University of Maryland, we determined that we needed to take a step back and reevaluate what kind of data our onboarding wizard would need to process and how different types of users with their existing workflows and nomenclature would interact with our wizard.
+            Our design features an initial tutorial that introduces the principles of project management to users who are not familiar with it in a why-how order, first explaining the purpose of each principle and then explaining how our platform implements the principle. The Workflow builder in the onboarding process directs the user through a streamlined process, giving them experience with defining a process. Expert templates give users examples from experts with experience managing experiential learning programs and that they can tailor to suit their needs.
           </p>
-            
-          <p>
-            Our team conducted user testing with three participants using semi-structured interview to better understand how managers of experiential learning platforms manage client relationships, focusing on their workflow and tools. Our participants all manage different experiential learning programs at the University of Maryland.
-          </p>
-            
-          <p>
-            After our interviews, we used affinity mapping to synthesize our thoughts and generate insights. We then used the information we gleaned during our research to create diagrams modeling the problem space. We developed two personas based on our participant data to help our client better understand the target user of our design. We also developed collaboration models and workflow models based on our participant data. Based on this data, I developed a diagram detailing what data our software would need to collect and how it might go about doing so, which I used to create a user flow diagram that would guide our team as we worked on our prototype.
-          </p>
-        </div>
-        
-        <div class="project-image-container">
-          <div class="flexbox columns">
-            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/oiw5gxzi2kb3fbez7b0q7/collaboration-model.png?rlkey=ufab6twlkkxymmsfr9yagxqve&raw=1">
-            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/nfdb5t73od6k6qu2u4c9d/iconsultancy-workflow.png?rlkey=vzsddhnmu2k2e2wxidt9j6l5q&raw=1">
-            <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/4et4q7twun56id2cmbhea/quest-workflow.png?rlkey=h7q1oubrg6gkefglmeistfbmi&raw=1">
-            <div class="grid col-3">
-              <img loading="lazy" src="https://www.dropbox.com/scl/fi/psbipwy1gl18u1pnbpuci/general-team-structure.png?rlkey=6ug19mc7w18kpdtjx9g4t417u&raw=1">
-              <img loading="lazy" src="https://www.dropbox.com/scl/fi/epwpek6imrilz2lqiunh6/persona-1.png?rlkey=lvdzdcp5lk3x0k4lqwk37y2kv&raw=1">
-              <img loading="lazy" src="https://www.dropbox.com/scl/fi/6g1ux88aoosutarg5g01n/persona-2.png?rlkey=td2kzidhny4a6fs65u51rlz5n&raw=1">
-            </div>
+          
+          <div class="project-image-container">
+            <!--add image of project management here-->
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
           </div>
+
+          
+          <!--encouraging systems thinking-->
+          <h4>Encouraging Systems Thinking</h4>
+          <p>
+            Our gating system helps users define key decision points and control risk. The approval process  keeps the team more informed about the work done by other users on the team. The workflow builder also prompts users to think through the processes before actually jumping to day to day work.
+          </p>
           
 
+          <div class="project-image-container">
+            <!--add image of systems thinking here-->
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+          </div>
+
+
+          <!--nomenclature alignment-->
+          <h4>Nomenclature Alignment</h4>
+          <p>
+            The expert templates help novice users get started with tasks and stages if they do not know where to begin. Users can modify tasks and stages in the template or create their own tasks and stages based on their own internal nomenclature. The invite and comment system help the team communicate within the system and use their individual expertise to flesh out the parts of the workflow they were more familiar with.
+          </p>
+
+
+          <div class="project-image-container">
+            <!--add image of nomenclature alignment here-->
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+          </div>
+
+          <!--newcomer-friendly and scalable platform-->
+          <h4>Newcomer-Friendly and Scalable Platform</h4>
+          <p>
+            The tutorial uses a why-how process of first defining important process management terms and then showing how the system implements the different principles to help users understand not only how to use the system but also why the process indicated by the system is important. The invite and comment system invites the user and their team to work together to piece together the workflow and understand the process as a whole.
+          </p>
+
+          <div class="project-image-container">
+            <!--add image of newcomer-friendly and scalable platform here-->
+            <img loading="lazy" class="small" src="" style="background:gray;height:100px;width:100px;">
+          </div>
         </div>
 
       </div>
 
       <div class="project-process">
         <div class="content">
-          <h2>Data Collection Diagram</h2>
+          <h2>Final User Testing Results</h2>
           <p>
-            From our user research, our team uncovered that nomenclature is extremely important to our users during each step of their process. Beyond causing discomfort, mismatches in nomenclature cause users to ignore, avoid, or skip over features in the software that would otherwise benefit them. To avoid having these mismatches in nomenclature, it is important for our software to not only have the flexibility to make changes to nomenclature but also to seamlessly interpret user inputs to make accurate judgments about what workflows would best fit with certain users. To that end, I created a data collection diagram to determine what kind of data about our users would be essential for our software to function and how that data could be gleaned. 
+            <!-- divide this into proper bullet points and style bold -->
+            We tested our final prototype with 2 users. User 1 was a faculty director in the School of Public Policy at UMD with CRM experience in ClickUp and Asana. User 2 was a former director of an experiential learning program in the School of Information Science at UMD with CRM experience in ActiveCampaign and Google Sheets. 
+
+            Some feedback that we received was:
+            The tutorial and tooltips are helpful, even for experienced users. 
+            “The voice is helpful and concise.”
+            “I'd probably skip it but would like to resume this when I need it.”
+            Users are interested in using the expert templates.
+            “I'd like to see the template first and build from it.”
+            “I like expert template as I'd like to speak the same language with people at a higher lever. What secrets do they have the I can learn from?”
+            The comment system is useful for centralizing discussion and allocating tasks.
+            “I like that you can assign who's responsible for what by comments and gates.”
+            The gating system helps users understand process management.
+            “The gate language is clever. I know you need to do this thing before doing other things. Very clever.”
           </p>
         </div>
 
@@ -201,24 +313,12 @@
 
       <div class="project-process">
         <div class="content">
-          <h2>User Flow</h2>
-          <p>
-            Using our existing prototype and the new information we uncovered through our research and my data collection diagram, I constructed a user flow diagram that would guide us as we refined our prototype. 
-          </p>
-        </div>
-
-        <div class="project-image-container">
-          <img loading="lazy" class="small" src="https://www.dropbox.com/scl/fi/l84qf0hdfpujeak5g1p0h/user-flow.png?rlkey=10jhmzt7pksic8pn1km8e931h&raw=1">
-        </div>
-      </div>
-
-      <div class="project-process">
-        <div class="content">
           <h2>Next Steps</h2>
+          <!-- divide this into proper bullet points and style bold -->
           <ul>
-            <li>Apply the information we collected from user research to iterate the onboarding process.</li>
-            <li>Redefine our scope and design question.</li>
-            <li>Participatory design session with TJ.</li>
+            Conduct more research with people running other types of experiential learning programs. For our project, we focused on individuals running project-based learning programs, but it may be useful to study those running work-based, research-based, and community-based projects. Future teams working with Praxis Impact should consider learning from their workflows, creating expert templates for these types of experiential learning programs, and testing the existing system with them to identify opportunities for improvement in the setup process and nomenclature used.
+            Create a more robust gating system. While our team outlined the general framework for gates within the system, there are opportunities to make the system more powerful by adding more functionalities, like conditionals for setting up reminders and hard gates, dependencies for gates that require multiple tasks to be completed in sequence, and flexible gates depending on the role or expertise of assigned team members. 
+            Consider the day-to-day user flow within the system. Our team primarily focused on the onboarding process for the platform as a way of uncovering what essential functions the platform would have, so future teams would need to consider what the features set up in the onboarding process would look like to an end-user on a day-to-day basis. Future teams would need to design a user's daily interactions with soft gates and hard gates and build out other task functionalities, like options to create nested tasks or assign tasks to different team members.
           </ul>
         </div>
       </div>
@@ -227,10 +327,22 @@
         <div class="content">
           <h2>Results and Takeaways</h2>
           <p>
-            Exploring diverse user perspectives beyond your primary client enriches insights. The design process is non-linear. You  may have to revisit the mapping stage to better understand the problem. Presenting unfinished work to the client can actually be quite valuable, as long as the justification is clear.
+            I entered this project thinking that the design problem was straightforward, but as we interviewed individuals working to facilitate different experiential learning programs, we saw how wide the sphere was -- how each program was using a different set of tools tuned and organized to their own process to make up for the holes in each individual tool -- I realized that the problem of creating a flexible CRM for experiential learning programs was going to be even more complicated than understanding each of these individuals' processes. Throughout this project, I learned about the importance of using language intentionally when communicating about systems and processes. When it came to testing new ideas, participants would get caught up in terms used differently from how they tended to use them and improperly named tasks. In experience design, <span class="bold">terms and labels are just as important as layout and other aspects of visual design</span>.
+          </p>
+          <p>
+            I also found the reminder of the non-linear nature of design to be refreshing. There were several times my team returned to sketching to communicate new design ideas and to researching new terms and competitors to our design based on information we uncovered through user interviews. Involving our client in the design process and in client presentations also helped them contribute more of their vision to the final design and allowed our team to bring up points that they had never considered before. <span class="bold">Ultimately, the process of engaging in this capstone project helped me better understand the fundamentals of systems thinking and test designs with more intentionality.</span>
           </p>
         </div>
-        
+      </div>
+
+      <div class="project-image-container praxis bg">
+        <div class="grid col-2 ">
+          <!--replace with correct images-->
+          <img loading="lazy" src="https://www.dropbox.com/scl/fi/clp4kooolfzjgsu2aul32/final-homepage.png?rlkey=h06k7homxdx5ug69lvswsemm5&raw=1">
+          <img loading="lazy" src="https://www.dropbox.com/scl/fi/ppcn7gmuf2vovqnaieu4m/final-personal-log.png?rlkey=d23xek4j1tcpv0fubd4vw6hfi&raw=1">
+          <img loading="lazy" src="https://www.dropbox.com/scl/fi/x6e6l0tayc8957xz1wvwl/final-search-results.png?rlkey=em1alaqt47mgdnjbzrhvkxlia&raw=1">
+          <img loading="lazy" src="https://www.dropbox.com/scl/fi/gllnv4x1khx9ihupqck38/final-trick-detail.png?rlkey=bu32i1nakc08huhg35fnal3fz&raw=1">
+        </div>
       </div>
 
       <footer>
