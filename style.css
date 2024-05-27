@@ -262,6 +262,18 @@ footer a {
   text-decoration: none;
   width: 2rem;
   height: 2rem;
+  display: block;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  width: fit-content;
 }
 
 button {
